@@ -12,7 +12,7 @@
         }
         .container {
             height: 100%;
-            background-image: url('https://www.aleaprotection.com/cdn/shop/files/Alea_2023-08-1820811.jpg?v=1694534669&width=2048');
+            background-image: url('');
             background-size: cover;
             background-position: center;
             position: relative;
@@ -52,6 +52,97 @@
             </div>
             <div class="half" onclick="handleB2BClick()">
                 <div class="text">B2B</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function handleB2CClick() {
+            window.location.href = 'b2c.html';
+        }
+
+        function handleB2BClick() {
+            window.location.href = 'b2b.html';
+        }
+    </script>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPad Kiosk Landing Page</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            height: 100%;
+            background-image: url('https://www.aleaprotection.com/cdn/shop/files/Alea_2023-08-1820811.jpg?v=1694534669&width=2048');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            flex-direction: column;
+        }
+        .logo-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .logo-container img {
+            max-width: 150px;
+            height: auto;
+        }
+        .sections {
+            display: flex;
+            flex: 1;
+        }
+        .half {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .half:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .text {
+            color: white;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="overlay">
+            <div class="logo-container">
+                <img src="www.aleaprotection.com/cdn/shop/files/alea-logo.svg?v=1693449092&width=328" alt="Logo">
+            </div>
+            <div class="sections">
+                <div class="half" onclick="handleB2CClick()">
+                    <div class="text">B2C</div>
+                </div>
+                <div class="half" onclick="handleB2BClick()">
+                    <div class="text">B2B</div>
+                </div>
             </div>
         </div>
     </div>
