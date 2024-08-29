@@ -78,7 +78,8 @@
 
     <script>
         function handleB2CClick() {
-            window.location.href = '/b2c';
+            window._klOnsite = window._klOnsite || [];
+            window._klOnsite.push(['openForm', 'VunieF']);
         }
 
         function handleB2BClick() {
