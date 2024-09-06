@@ -39,6 +39,12 @@
         .sections {
             display: flex;
             flex: 1;
+            flex-direction: row; /* Default layout (horizontal) */
+        }
+        @media (max-width: 768px) { /* For screens smaller than 768px */
+            .sections {
+                flex-direction: column; /* Stack vertically on mobile */
+            }
         }
         .half {
             flex: 1;
@@ -55,10 +61,10 @@
             color: white;
             font-size: 3rem;
             font-weight: bold;
-            text-align: center; /* Added this line */
+            text-align: center;
         }
     </style>
-<script type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=XQXhLU"></script>
+    <script type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=XQXhLU"></script>
 
 </head>
 <body>
